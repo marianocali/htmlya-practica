@@ -1,0 +1,140 @@
+*{
+	margin: 0px;
+	padding: 0px; 
+
+}
+
+.formulario{
+	text-align: center;
+	margin: 30px;
+    margin-right:auto; 
+}
+
+.table , th, td {
+	border: 1px solid blue;
+	background-color: orange;
+	margin-left:auto; 
+    margin-right:auto; 
+}
+
+.columna1{
+  float:left; 
+  top:0px;
+  left:50px;
+  width:200px;
+  margin-top:10px;
+  border:1px solid #555;
+  background-color:#ffffbb;
+}
+
+.columna2 { 
+  position:relative;
+  margin-left:220px;
+  margin-right:20px;
+  width:200px;
+  margin-top:10px;  
+  background-color:#ffffbb;
+  border:1px solid #555;
+}
+
+
+
+.container{
+	width: 960px;				
+	border: 1px solid black;
+	margin: auto;
+	font: courier;
+} 
+
+#encabezado{
+	height: 200px;
+	width: 960px;
+	background-color: blue;
+}
+
+#top{
+	background-color: red;
+	height: 45px;
+	width: 960px;	
+}
+
+#top ul li{     /*   le quitan los bullets a la lista que esta dentro de top*/
+	list-style: none;
+	color: white;
+	display: inline-block;	 
+}
+
+#principal{
+	height: 630px;
+	width: 440px;
+	float: left;
+	margin: 10px;
+	background-color: orange;
+	padding: 10px;
+}
+
+#lateral{
+	height: 630px;
+	width: 440px;	
+	float: right;
+	background-color: gray;
+	padding: 10px;
+	margin: 10px;
+}
+
+#siguiente{
+	/*position: absolute;*/
+	position: relative;
+	left: 800px;
+	bottom: 35px;   		/* hace que suba */ 
+
+
+}
+
+#lanacion{
+	position: relative;
+	left: 910px;
+	bottom: 35px;   		/* hace que suba */ 
+
+}
+
+#lanacion2{
+	position: relative;
+	left: 10px;
+}
+
+#siguiente2{
+	/*position: absolute;*/
+	position: relative;
+	left: 100px;
+	bottom: 35px;   		/* hace que suba */ 
+
+
+}
+
+footer{
+	height: 60px;
+	width: 960px;	
+	position: fixed;
+	background-color: gray;
+	clear: both;  /* reconoce los float y los limpia
+	posiciona el elemento abajo */
+	text-align: center;
+	color: blue;
+	bottom: 0px;
+	margin: 2px;
+}	
+
+
+
+#bottom: {
+	background-color: blue;
+	height: 45px;
+	width: 960px;	
+}
+
+#bottom ul li{     /*   le quitan los bullets a la lista que esta dentro de top*/
+	list-style: none;
+	color: white;
+	display: inline-block;	 
+}

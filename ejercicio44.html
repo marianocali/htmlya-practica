@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<head>
+	<title></title>
+	<p>
+		Crear un controles de tipo text,password y textarea. Disponerlos todos de solo lectura.
+	</p>
+</head>
+<body>
+<form action="registrarDatos.php" class="formulario" method="post">
+	Su país elegido es	
+	<input type="text" name="pais" value="Argentina" readonly="">
+	<br>
+	Su clave elegida es 
+	<input type="password" name="pass" readonly="" value="1234">
+
+	<br>
+	Sus comentarios fueron
+	<input type="textarea" name="comentarios" value=" Me gusto mucho " readonly="true">
+
+</form>
+</body>
+</html>

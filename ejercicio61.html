@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<p style="position: relative; left:200px; width: 600px ">
+		Confeccionar una página que muestre un pequeño tutorial sobre un tema que usted conozca. Defina un título principal para el tutorial. Utilice una lista ordenada para indicar los distintos conceptos que contiene el tutorial con enlaces a los temas propiamente dicho. Cada tema debe tener su título y la descripción del tema. Utilice los conceptos básicos presentados hasta el momento sobre CSS.
+	</p>
+
+	<p>
+		<h1>
+			TABLAS PARTICIONADAS
+		</h1>
+	</p>
+
+	<ol>
+		<li> <a href="#tema1"> Que son </a></li>
+		<li> <a href="#tema2"> Como se particionan</a>  </li>
+		<li> <a href="#tema3"> Partición default</a>  </li>
+	</ol>	
+
+	<a name="tema1"></a>
+	<div style="position: relative; left:200px; width: 500px">
+		<p>
+			<h2>Que son</h2>
+			Una tabla particionada funciona desde el punto de vista físico como muchas tablas físicas, pero una única tabla lógica. De esta forma cuando se haga un SELETC se hará siempre sobre el mismo nombre de la tabla, pero luego se ejecutará sobre uno u otro archivo.
+			Esto hace que al momento de ejecutar querys se ejecuten sobre un archivo con menor cantidad de registros. Ej.: si la tabla tiene cinco millones de registros y hay cinco particiones de un millón cada una. Un query probablemente se ejecute solo sobre un millón de relativegistros y no sobre 5.
+		</p>
+	</div>
+
+	<a name="tema2"></a>
+	<div style="position: relative; left:200px; width: 500px">
+		<p>
+			<h2>Como se particionan</h2>
+			Para que una tabla sea particionada, se debe establecer un criterio de particionamiento. Este criterio definirá que registros van a ir a parar a cada una de las particiones.
+			Si tenemos registros de un país organizado por regiones, cada partición podría ser una región o una provincia.
+			Si tenemos registros que se agregan temporalmente, puede convenir crear particiones por fechas, por ejemplo por día, por mes o por año.
+			En este caso se debe establecer un mecanismo que se encargue de crear las nuevas particiones periódicamente.			
+		</p>
+	</div>
+
+	<a name="tema3"></a>
+	<div style="position: relative; left:200px; width: 500px">
+		<p>
+			<h2>Partición default</h2>
+			Es posible crear una partición por default. Esta partición contiene a aquellos registros que no cumplen con las condiciones normales de división de los registros. 
+			Volviendo a ejemplo de las regiones, se pueden crear n regiones y todo lo que no pertenezca a alguna de esas regiones ira a parar a la partición por default.
+			También es posible en el caso de las fechas. Si existen particiones para los meses de Enero a Junio, si llega a aparecer un registro con una fecha mayor a Junio ira a la partición por defecto.
+
+			La partición por defecto es un mecanismo de defensa que evita errores. Si un registro va a ser insertado y el motor de BD no encuentra una partición en donde insertarlo, lanzará una excepción diciendo que no existe una partición en donde alojar a ese registro.
+			De esta forma nos protegemos de que en caso de un error por ejemplo, una fecha mal cargada, no va  a lanzar una excepción la base, sino que se va a insertar en la partición por default.			
+
+		</p>
+		<br>
+	</div>
+
+</body>
+</html>	

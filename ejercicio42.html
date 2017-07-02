@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<head>
+	<title></title>
+	<p>
+		Confeccionar un formulario que muestre un control de cada tipo y los muestre todos deshabilitados. 
+		<br>
+		Cuando conozca JavaScript podemos habilitarlos por ejemplo si el Los siguientes elementos pueden inhabilitarse:
+
+		button, input, optgroup, option, select y textarea.
+
+		visitante ingresa una clave correcta, por ahora vea como queda visualmente el formulario con los controles deshabilitados.
+	</p>
+</head>
+<body>
+	<form action="registrarDatos.php" class="formulario" method="post">
+		<table class =table >
+			<tr>
+				<td> Ingrese su nombre</td>
+				<td> <input type="text" disabled="true" name="nombre"></td>
+			</tr>
+			<tr>
+				<td>Ingrese su tipo de país</td>
+				<td> <select name="paises" >
+					<optgroup label="America">
+						<option value="1">Argentina </option>
+						<option value="2">Uruguay </option>
+						<option value="3">Brasil </option>
+						<option value="4">Chile </option>
+						<option value="5" disabled="true">Paraguay </option>
+					</optgroup>
+					<optgroup label="Europa">
+						<option value="6">Alemania </option>
+						<option value="7">Suiza </option>
+						<option value="8" disabled="true">Finlandia  </option>
+						<option value="8">Suecia </option>
+						<option value="9">Austria </option>
+					</optgroup>	
+				</select>
+
+			</td>
+		</tr>
+		<tr>
+			<td>Ingrese su tipo de DNI</td>
+			<td><select name="opinion" size="1" disabled="true">
+				<option value="1">DNI</option>
+				<option value="2">LE</option>
+				<option value="3">LC</option>
+			</tr>
+
+		</table>
+		<br>
+		<input type="button" name="Enviar" value=" Enviar " disabled="true"></button>
+
+	</form>
+
+
+</body>
+</html>

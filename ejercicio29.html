@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+	<p>
+		Confeccionar un formulario que permita ingresar el nombre de una persona, su mail, su dni (documento nacional de identidad) y finalmente su curriculum (este último dato hacerlo utilizando un textarea) 
+	</p>
+</head>
+<body>
+	<form action="registrarDatos.php" method="post">
+		
+		ingrese su nombre:
+		<input type="text" name="Nombre">
+		<br>
+		Ingrese su email:
+		<input type="email" name="email" >
+		<br>
+
+		Ingrese su dni:
+		<input type="number" name="dni">
+		<br>
+		
+		Ingrese su CV <br>
+		<textarea name="cv" rows="10" cols="60">
+			
+		</textarea>
+
+		<br>
+		<input type="submit" name="Enviar">
+	</form> 
+
+</body>
+</html>

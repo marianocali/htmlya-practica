@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+	<p>
+		Confeccionar un formulario que permita solicitar pizzas a domicilio. Enviar el pedido a la dirección de correo pizzasya@gmail.com
+	</p>
+</head>
+
+<body>
+	<form action="mailto:pizzasya@gmail.com?subject=pedido de pizza" enctype="text/plain" method="post">
+		<fieldset>
+			<legend> Datos del cliente</legend>
+			ingrese su nombre:
+			<input type="text" name="nombre" size="30">
+
+			<br>	
+			Ingrese su telefono:
+			<input type="text" name="telefono" size="20">
+
+		</fieldset>
+		<br>
+
+		<fieldset>
+			<legend>Seleccione tipo y cantidad de pizzas</legend>
+			Pizza:
+			<select name="pizza1">
+				<option value="Muzzarella">Muzzarella</option>
+				<option value="Jamon y Queso">Jamon y Queso</option>
+				<option value="Napolitana">Napolitana</option>
+			</select>
+			Cantidad:
+			<select name="cantidad1">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select>
+			<br>
+			Pizza:
+			<select name="pizza2">
+				<option value="Muzzarella">Muzzarella</option>
+				<option value="Jamon y Queso">Jamon y Queso</option>
+				<option value="Napolitana">Napolitana</option>
+			</select>
+			Cantidad:
+			<select name="cantidad2">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select>
+			<br>
+			Pizza:
+			<select name="pizza3">
+				<option value="Muzzarella">Muzzarella</option>
+				<option value="Jamon y Queso">Jamon y Queso</option>
+				<option value="Napolitana">Napolitana</option>
+			</select>
+			Cantidad:
+			<select name="cantidad3">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<input type="submit" name="Enviar">
+		</form>
+	</body>
+	</html> 

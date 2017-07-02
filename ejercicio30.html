@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+	<p>
+		Confeccione un formulario que solicite el ingreso de un mail, una clave y luego muestre una serie de títulos de películas con su respectivo checkbox. 
+		Disponer también del botón de tipo submit para el envío de datos al servidor. 
+	</p>
+</head>
+<body>
+	<form action="registrarDatos.php" method="post">
+		Ingrese su email:
+		<input type="email" name="email" >
+		<br>
+
+		Ingrese su clave:
+		<input type="password" name="clave1">
+		<br>
+
+		<input type="checkbox" name="tardes"> Mis tardes con Margarita <br> 
+		<input type="checkbox" name="tren"> El tren de la vida <br> 
+		<input type="checkbox" name="Madison"> Los puentes de Madison <br>
+
+		<br>
+		<input type="submit" name="Enviar">
+	</form>
+
+</body>
+</html>
